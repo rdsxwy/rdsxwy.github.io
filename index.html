@@ -66,9 +66,46 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-曼哈顿距离" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-大数模板" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/08/23/曼哈顿距离/" class="article-date">
+    <a href="/2018/08/23/大数模板/" class="article-date">
+  <time datetime="2018-08-23T00:43:18.000Z" itemprop="datePublished">2018-08-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/23/大数模板/">大数模板</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>HDU 6433<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">#include &lt;cstring&gt;</span><br><span class="line">#include &lt;algorithm&gt;</span><br><span class="line">#define ms(a, b) memset(a, b, sizeof(a))</span><br><span class="line">using namespace std;</span><br><span class="line">typedef long long ll;</span><br><span class="line">const int maxn = 100000 + 5;</span><br><span class="line"></span><br><span class="line">int a[maxn], n;</span><br><span class="line"></span><br><span class="line">int main()&#123;</span><br><span class="line">    int T; scanf(&quot;%d&quot;, &amp;T);</span><br><span class="line">    while (T--)&#123;</span><br><span class="line">        scanf(&quot;%d&quot;, &amp;n);</span><br><span class="line">        a[0] = 1;</span><br><span class="line">        int cnt = 1;</span><br><span class="line">        for (int i = 1; i &lt;= n; i++)&#123;</span><br><span class="line">            int g = 0, tmp = 0;</span><br><span class="line">            for (int j = 0; j &lt; cnt; j++)&#123;</span><br><span class="line">                tmp = a[j] * 2 + g;</span><br><span class="line">                a[j] = tmp % 10000;</span><br><span class="line">                g = tmp / 10000;</span><br><span class="line">            &#125;</span><br><span class="line">            while (g)&#123;</span><br><span class="line">                a[cnt++] = g % 10000;</span><br><span class="line">                g /= 10000;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        printf(&quot;%d&quot;, a[cnt - 1]);</span><br><span class="line">        for (int i = cnt - 2; i &gt;= 0; i--)&#123;</span><br><span class="line">            printf(&quot;%04d&quot;, a[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        printf(&quot;\n&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/23/大数模板/" data-id="cjl5uhxyc0000hkspaiq5c4eb" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-最远曼哈顿距离" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/23/最远曼哈顿距离/" class="article-date">
   <time datetime="2018-08-23T00:38:54.000Z" itemprop="datePublished">2018-08-23</time>
 </a>
     
@@ -80,7 +117,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/23/曼哈顿距离/">最远曼哈顿距离</a>
+      <a class="article-title" href="/2018/08/23/最远曼哈顿距离/">最远曼哈顿距离</a>
     </h1>
   
 
@@ -93,7 +130,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/23/曼哈顿距离/" data-id="cjl5ue4q500015osp8co3p62t" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/08/23/最远曼哈顿距离/" data-id="cjl5uhxyk0002hksptp65mkqo" class="article-share-link">Share</a>
       
       
     </footer>
@@ -129,7 +166,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/15/读入挂/" data-id="cjl5ue4py00005ospcycccpxc" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/08/15/读入挂/" data-id="cjl5uhxyi0001hkspyssfnrtr" class="article-share-link">Share</a>
       
       
     </footer>
@@ -170,7 +207,11 @@
       <ul>
         
           <li>
-            <a href="/2018/08/23/曼哈顿距离/">最远曼哈顿距离</a>
+            <a href="/2018/08/23/大数模板/">大数模板</a>
+          </li>
+        
+          <li>
+            <a href="/2018/08/23/最远曼哈顿距离/">最远曼哈顿距离</a>
           </li>
         
           <li>
