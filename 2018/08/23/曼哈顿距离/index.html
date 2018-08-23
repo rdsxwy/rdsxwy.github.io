@@ -5,15 +5,19 @@
   
 
   
-  <title>让我们红橙作伴</title>
+  <title>最远曼哈顿距离 | 让我们红橙作伴</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="让我们红橙作伴">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="HDU 64351234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677#include &amp;lt;cstdio&amp;gt;#include &amp;lt;cstring&amp;gt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="最远曼哈顿距离">
+<meta property="og:url" content="http://yoursite.com/2018/08/23/曼哈顿距离/index.html">
 <meta property="og:site_name" content="让我们红橙作伴">
+<meta property="og:description" content="HDU 64351234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677#include &amp;lt;cstdio&amp;gt;#include &amp;lt;cstring&amp;gt;">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-08-23T00:41:52.328Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="让我们红橙作伴">
+<meta name="twitter:title" content="最远曼哈顿距离">
+<meta name="twitter:description" content="HDU 64351234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677#include &amp;lt;cstdio&amp;gt;#include &amp;lt;cstring&amp;gt;">
   
     <link rel="alternate" href="/atom.xml" title="让我们红橙作伴" type="application/atom+xml">
   
@@ -64,9 +68,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-曼哈顿距离" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-曼哈顿距离" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/08/23/曼哈顿距离/" class="article-date">
   <time datetime="2018-08-23T00:38:54.000Z" itemprop="datePublished">2018-08-23</time>
@@ -79,8 +81,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/23/曼哈顿距离/">最远曼哈顿距离</a>
+    <h1 class="article-title" itemprop="name">
+      最远曼哈顿距离
     </h1>
   
 
@@ -99,47 +101,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-读入挂" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/08/15/读入挂/" class="article-date">
-  <time datetime="2018-08-15T02:53:20.000Z" itemprop="datePublished">2018-08-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/15/读入挂/">读入挂</a>
-    </h1>
+    <a href="/2018/08/15/读入挂/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">读入挂</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> fastIO &#123;</span><br><span class="line">	<span class="meta">#<span class="meta-keyword">define</span> BUF_SIZE 100000</span></span><br><span class="line">	<span class="comment">//fread -&gt; read</span></span><br><span class="line">	<span class="keyword">bool</span> IOerror = <span class="number">0</span>;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">char</span> <span class="title">nc</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">static</span> <span class="keyword">char</span> buf[BUF_SIZE], *p1 = buf + BUF_SIZE, *pend = buf + BUF_SIZE;</span><br><span class="line">		<span class="keyword">if</span>(p1 == pend) &#123;</span><br><span class="line">			p1 = buf;</span><br><span class="line">			pend = buf + fread(buf, <span class="number">1</span>, BUF_SIZE, <span class="built_in">stdin</span>);</span><br><span class="line">			<span class="keyword">if</span>(pend == p1) &#123;</span><br><span class="line">				IOerror = <span class="number">1</span>;</span><br><span class="line">				<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> *p1++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">bool</span> <span class="title">blank</span><span class="params">(<span class="keyword">char</span> ch)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> ch == <span class="string">' '</span> || ch == <span class="string">'\n'</span> || ch == <span class="string">'\r'</span> || ch == <span class="string">'\t'</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">read</span><span class="params">(<span class="keyword">int</span> &amp;x)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">char</span> ch;</span><br><span class="line">		<span class="keyword">while</span>(blank(ch = nc()));</span><br><span class="line">		<span class="keyword">if</span>(IOerror) <span class="keyword">return</span>;</span><br><span class="line">		<span class="keyword">for</span>(x = ch - <span class="string">'0'</span>; (ch = nc()) &gt;= <span class="string">'0'</span> &amp;&amp; ch &lt;= <span class="string">'9'</span>; x = x * <span class="number">10</span> + ch - <span class="string">'0'</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="meta">#<span class="meta-keyword">undef</span> BUF_SIZE</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> fastIO;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span> T; read(T);</span><br><span class="line">	<span class="keyword">while</span> (T--) &#123;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/15/读入挂/" data-id="cjl5ue4py00005ospcycccpxc" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
